@@ -22,6 +22,8 @@
 ![](screenshot/Screenshot2.png)
 
 ## Demo
+[Demo video](https://github.com/Subashkumar-S/Number_Guessing_Game/assets/112946164/3b885cf3-e70a-4d50-b455-d0d3c5e84661)
+
 
 ## Built with
 
