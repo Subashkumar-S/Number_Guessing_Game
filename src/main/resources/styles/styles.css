@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Merienda&display=swap');
+*{
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-background-color: #2f1c3d;
+    -fx-text-fill : "white";
+    -fx-font-size: 20px;
+    -fx-font-family: 'Merienda', cursive;
+}
+.button {
+    -fx-background-color: #560bad;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 50px;
+    -fx-text-transform: uppercase;
+}
+.button:hover{
+    -fx-opacity: 0.8;
+}
+#startMenu{
+    -fx-pref-width : 400px;
+    -fx-pref-height : 400px;
+    -fx-vgap : 30px;
+    -fx-alignment: center;
+}
+#scoreMenu{
+    -fx-alignment: center;
+    -fx-pref-width : 400px;
+    -fx-pref-height : 400px;
+    -fx-vgap : 30px;
+}
+#scoreLabel{
+    -fx-pref-width : 150px;
+}
+#gameMenu{
+    -fx-pref-width : 400px;
+    -fx-pref-height : 400px;
+    -fx-vgap : 30px;
+    -fx-alignment: center;
+}
+#instructionLabel{
+    -fx-pref-width : 400px;
+}
+#inputField{
+    -fx-background-color : #560bad;
+    -fx-max-width : 350px;
+    -fx-pref-height: 80px;
+    -fx-text-fill : "white";
+}
+#btnTryAgain{
+    -fx-background-color: #560bad;
+    -fx-pref-width: 200px;
+    -fx-pref-height: 50px;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.Boolean?>
+<?import java.net.URL?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="309.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.numberguessinggame.HelloController">
+   <!-- link stylesheet -->
+   <stylesheets>
+      <URL value="@../../../styles/styles.css"/>
+   </stylesheets>
+   <!-- Start menu -->
+   <GridPane fx:id="startMenu" AnchorPane.topAnchor="0">
+      <ImageView GridPane.rowIndex="0" fitWidth="300" fitHeight="300" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/gameBackground.jpg"/>
+         </image>
+      </ImageView>
+      <Button fx:id="btnStart" text="Start" GridPane.rowIndex="1" GridPane.halignment="CENTER"
+              onAction="#onStartButtonClick"/>
+      <Button fx:id="btnExit" text="Exit" GridPane.rowIndex="2" GridPane.halignment="CENTER"
+              onAction="#onExitButtonClick"/>
+   </GridPane>
+
+   <!-- Game menu -->
+   <GridPane fx:id="gameMenu" visible="false" AnchorPane.topAnchor="50">
+      <Label fx:id="instructionLabel" text="Enter the number between 1 - 100." GridPane.rowIndex="0">
+         <wrapText>
+            <Boolean fx:value="true"/>
+         </wrapText>
+      </Label>
+      <TextField fx:id="inputField" promptText="Enter Guess" GridPane.rowIndex="1" GridPane.halignment="CENTER"/>
+      <Label fx:id="chanceCounterLabel" GridPane.rowIndex="2" GridPane.halignment="CENTER"/>
+      <Button fx:id="btnCheck" onAction="#onCheckButtonClick" text="Check" GridPane.rowIndex="3"
+              GridPane.halignment="CENTER"/>
+      <Label fx:id="hintLabel" text=" " GridPane.rowIndex="4" GridPane.halignment="CENTER">
+         <wrapText>
+            <Boolean fx:value="true"/>
+         </wrapText>
+      </Label>
+   </GridPane>
+
+   <!-- Result Menu -->
+   <GridPane fx:id="scoreMenu" visible="false" AnchorPane.topAnchor="50">
+      <Label fx:id="scoreLabel" GridPane.rowIndex="0" GridPane.halignment="CENTER"/>
+      <Label fx:id="resultLabel" text="You have guessed correctly." GridPane.rowIndex="1" GridPane.halignment="CENTER">
+         <wrapText>
+            <Boolean fx:value="true"/>
+         </wrapText>
+      </Label>
+      <Button fx:id="btnTryAgain" text="Try again" onAction="#onTryAgainButtonClick" GridPane.rowIndex="2"
+              GridPane.halignment="CENTER"/>
+      <Button fx:id="exitButton" text="Exit" GridPane.rowIndex="3" GridPane.halignment="CENTER"
+              onAction="#onExitButtonClick"/>
+   </GridPane>
+
+</AnchorPane>
